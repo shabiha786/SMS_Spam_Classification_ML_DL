@@ -39,7 +39,9 @@ Python Data Stack: pandas, numpy, matplotlib, seaborn
 NLP Processing: nltk (WordNet Lemmatizer, Tokenization), Regex, wordcloud
 Machine Learning: scikit-learn (CountVectorizer, Classifiers, Evaluation Metrics)
 Deep Learning: TensorFlow / Keras (Bi-LSTM, Dense Layers, Embeddings)
-## Repository Structure
+Repository Structure
+
+
 ├── Data/
 │   └── spam.csv                             # Raw dataset
 ├── Images/                                  # Stored visualization artifacts
@@ -49,6 +51,8 @@ Deep Learning: TensorFlow / Keras (Bi-LSTM, Dense Layers, Embeddings)
 ├── Spam_Detector_Model.pkl                   # Serialized Tokenizer
 ├── requirements.txt                         # Package dependencies
 └── README.md                                # Project documentation
+
+
 ## Approach
 1. Data Preprocessing
 Text cleaning (removal of punctuation, stopwords)
