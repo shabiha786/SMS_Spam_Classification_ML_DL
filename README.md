@@ -1,29 +1,29 @@
-SMS Spam Classification using Machine Learning and Deep Learning
+# SMS Spam Classification using Machine Learning and Deep Learning
 Python Scikit-Learn TensorFlow
 
-Problem Statement
+## Problem Statement
 With the increasing volume of SMS communication, spam messages have become a major concern affecting user experience and security. This project aims to build an intelligent system that can automatically classify SMS messages as spam or legitimate using both machine learning and deep learning techniques.
 
 Data Preprocessing & EDA: Clean textual data (Regex, Lemmatization, Stopword removal) and visually explore textual patterns utilizing custom Word Clouds and frequency distributions.
 Addressing Class Imbalance: Recognize that 'Ham' dominates the dataset (86.59%) and prioritize metrics like precision and recall over bare accuracy to strictly minimize False Positives.
 Traditional ML Baselines: Train and exhaustively compare algorithms including Logistic Regression, Support Vector Machine (SVM), Naive Bayes variants, Decision Trees, Gradient Boosting, and Bagging classifiers.
 Deep Learning Architecture: Design a Bi-LSTM model with Word Embeddings and Dropout regularization layers to achieve superior contextual understanding of messaging patterns.
-Objectives
+## Objectives
 Perform text preprocessing and feature extraction
 Build machine learning models for spam classification
 Develop deep learning models for improved accuracy
 Compare performance between ML and DL approaches
 Identify the most effective method for real-world deployment
 Performance Validation
-Model Comparison (Test Set)
+## Model Comparison (Test Set)
 Model	Accuracy	Precision	Recall	F1-Score
 Logistic Regression	97.68%	98.90%	96.10%	97.48%
 Support Vector Machine	97.70%	99.00%	96.50%	97.73%
 Bidirectional LSTM	98.16%	99.20%	97.00%	98.09%
-Dataset
+## Dataset
 SMS Spam Collection Dataset
 Contains labeled SMS messages (Spam / Ham)
-Text-based classification problem
+## Text-based classification problem
 Best Traditional ML: Logistic Regression & SVC achieved an impressive 97.68% Accuracy with near-perfect protection of legitimate messages, yielding an error rate of just 2.32%.
 Deep Learning (Bi-LSTM): Achieved 98.16% Test Accuracy, proving highly resilient and capable of interpreting nuanced semantic meaning that traditional Bag-of-Words vectors occasionally drop.
 Reproducibility & Technologies
@@ -34,12 +34,12 @@ Python
 Pandas, NumPy
 Scikit-learn
 TensorFlow / Keras
-NLTK
+## NLTK
 Python Data Stack: pandas, numpy, matplotlib, seaborn
 NLP Processing: nltk (WordNet Lemmatizer, Tokenization), Regex, wordcloud
 Machine Learning: scikit-learn (CountVectorizer, Classifiers, Evaluation Metrics)
 Deep Learning: TensorFlow / Keras (Bi-LSTM, Dense Layers, Embeddings)
-Repository Structure
+## Repository Structure
 ├── Data/
 │   └── spam.csv                             # Raw dataset
 ├── Images/                                  # Stored visualization artifacts
@@ -49,7 +49,7 @@ Repository Structure
 ├── Spam_Detector_Model.pkl                   # Serialized Tokenizer
 ├── requirements.txt                         # Package dependencies
 └── README.md                                # Project documentation
-Approach
+## Approach
 1. Data Preprocessing
 Text cleaning (removal of punctuation, stopwords)
 Tokenization and normalization
@@ -67,15 +67,9 @@ Accuracy
 Precision, Recall, F1-score
 Confusion Matrix
 Quick Start
-To run this project locally, follow these steps:
+To run this project locally, follow these steps
 
-Clone the repository:
-
-git clone https://github.com/the-irritater/SMS_Spam_Classification_ML_DL.git
-cd SMS_Spam_Classification_ML_DL
-Install the dependencies: It is recommended to use a Python virtual environment.
-
-Key Insights
+## Key Insights
 Machine learning models performed well with faster training time
 Deep learning models showed improved performance on complex patterns
 TF-IDF provided strong baseline results for text classification
@@ -85,12 +79,12 @@ Run the analysis: You can either explore the highly documented Jupyter Notebook:
 jupyter notebook SMS_Spam_Classification_Analysis.ipynb
 Or run the standalone Python script directly:
 python spam_classification.py
-Model Comparison
+## Model Comparison
 ML models are faster and easier to deploy
 DL models capture deeper patterns but require more computation
 Simpler models (Naive Bayes, Logistic Regression) are effective for baseline solutions
 ======= The data utilized in this repository is the renowned SMS Spam Collection Data Set originally sourced from the UCI Machine Learning Repository.
-Business Impact
+## Business Impact
 Enables automatic filtering of spam messages with 98.16% accuracy
 Improves user experience by reducing unwanted messages and phishing attempts
 Can be integrated into messaging platforms and telecom systems via API
@@ -98,13 +92,13 @@ Enhances security by identifying potentially harmful messages before user intera
 Provides interpretable metrics (precision/recall) to balance safety and usability
 Future Enhancements
 
-Deployment: Build a Flask/FastAPI endpoint for real-time classification
+## Deployment: Build a Flask/FastAPI endpoint for real-time classification
 Multilingual Support: Extend to non-English SMS datasets
 Explainability: Integrate LIME or SHAP for model interpretability
 Active Learning: Implement user feedback loop for continuous model improvement
 Model Compression: Apply quantization or pruning for mobile deployment
 How to Run
-Install required libraries
-Load dataset
+### Install required libraries
+## Load dataset
 Run preprocessing and model training
 Evaluate model performance
